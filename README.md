@@ -51,8 +51,6 @@ Debes verificar que:
 **Evidencias sugeridas:**
 
 - Capturas de pantalla de las peticiones POST exitosas.
-- (Opcional) Exportar la colección de Postman.
-
 ---
 
 ## ✅ Criterios de evaluación (20 puntos)
