@@ -17,8 +17,7 @@ public class ControllerPedido {
 
     @PostMapping
     public ResponseEntity<Pedido> savePedido(@RequestBody Pedido datosPedido) {
-        Pedido respuestaApi = servicePedido.savePedido(datosPedido);
-        return ResponseEntity.ok().body(respuestaApi);
+        return ResponseEntity.ok().body(servicePedido.savePedido(datosPedido));
     }
 }
 // che
