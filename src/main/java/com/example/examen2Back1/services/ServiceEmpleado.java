@@ -15,9 +15,7 @@ public class ServiceEmpleado {
     public Empleado saveEmpleado(Empleado empleado) {
 
         if(empleado.getFirstName() == null || empleado.getFirstName().equalsIgnoreCase("")){
-
             throw new ResponseStatusException(HttpStatus.CONFLICT,"Error al digital el empleado, el nombre no debe estar vacio o ser nulo");
-
         }
 
         return repositorio.save(empleado);

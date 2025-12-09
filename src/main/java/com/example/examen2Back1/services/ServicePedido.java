@@ -15,9 +15,7 @@ public class ServicePedido {
     public Pedido savePedido(Pedido pedido) {
 
         if(pedido.getDireccionEnvio() == null || pedido.getDireccionEnvio().equalsIgnoreCase("")){
-
             throw new ResponseStatusException(HttpStatus.CONFLICT,"Error al digitar el pedido, la direccion de envio no debe estar vacia o ser nula");
-
         }
 
         return repositorio.save(pedido);

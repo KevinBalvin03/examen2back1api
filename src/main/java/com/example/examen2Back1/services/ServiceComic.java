@@ -15,9 +15,7 @@ public class ServiceComic {
     public Comic saveComic(Comic comic) {
 
         if(comic.getTitulo() == null || comic.getTitulo().equalsIgnoreCase("")){
-
             throw new ResponseStatusException(HttpStatus.CONFLICT,"Error al digital el comic, el nombre no debe estar vacio o ser nulo");
-
         }
 
         return repositorio.save(comic);

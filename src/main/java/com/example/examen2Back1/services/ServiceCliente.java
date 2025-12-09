@@ -16,9 +16,7 @@ public class ServiceCliente {
     public Cliente saveCliente(Cliente cliente) {
 
         if(cliente.getFirstName() == null || cliente.getFirstName().equalsIgnoreCase("")){
-
             throw new ResponseStatusException(HttpStatus.CONFLICT,"Error al digital el cliente, el nombre no debe estar vacio o ser nulo");
-
         }
 
         return repositorio.save(cliente);
